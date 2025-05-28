@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghibli Character Encyclopedia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.9.0/dist/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+     font-family: Arial, sans-serif;
+      margin: 0;
+      background-image: url('images/background2.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #fff; /* optional: for readability */
+    }
+    .navbar {
+      background-color: rgba(66, 74, 113, 0.85); /* Ghibli theme + transparency */
+    }
+
+    .nav-link {
+      color: #fff !important;
+    }
+    .character-card {
+      width: 300px;
+      margin-bottom: 2rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .portrait {
+      width: 300px;
+      height: 380px;
+      background-size: cover;
+      background-position: center;
+    }
+    .character-info {
+      padding: 1rem;
+    }
+    .section-title {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+     footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #34355e;
+      font-size: 0.9rem;
+      color: #272626;
+    }
+  </style>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #37426b;" aria-label="Main navigation">
+  <div class="container-fluid">
+    <img src="images/logo.png" alt="Logo" height="90px" width="90px" >
+    <a class="navbar-brand" href="index.html">Studio Ghibli</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Explore</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="movie.html">Movies</a></li>
+            <li><a class="dropdown-item" href="characters.html">Character Encyclopedia</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+   
+
+
+<header class="text-center my-4">
+  <h1>Ghibli Character Encyclopedia</h1>
+  <p>A tribute to the most inspiring and meaningful characters from Studio Ghibli films.</p>
+</header>
+
+<main class="container">
+  <section>
+  <h2 class="section-title">Spirited Away Characters</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/a1.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Chihiro Ogino</h3>
+        <p>Chihiro starts as a timid girl who finds herself trapped in the spirit world. Through grit and kindness, she matures into a brave and selfless heroine.</p>
+        <p><strong>Lesson:</strong> Courage and growth come from facing your fears, not avoiding them.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/a2.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Haku</h3>
+        <p>Haku is a mysterious spirit who helps Chihiro navigate the world of the bathhouse, while struggling with his forgotten identity.</p>
+        <p><strong>Lesson:</strong> Knowing your true name and identity is powerful—never forget who you are.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/a3.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>No-Face</h3>
+        <p>No-Face starts as a quiet spirit but becomes greedy and chaotic when exposed to the bathhouse’s greed. He later finds peace with Zeniba.</p>
+        <p><strong>Lesson:</strong> Environment shapes behavior—kindness and calm bring out the best in others.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <h2 class="section-title">Earwig and the Witch Characters</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/b1.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Earwig</h3>
+        <p>A clever and resourceful orphan girl who finds herself adopted by a witch, learning to navigate magic and manipulation.</p>
+        <p><strong>Lesson:</strong> Quick thinking and adaptability help overcome difficult situations.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/b2.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Witch Bella Yaga</h3>
+        <p>The strict and demanding witch who adopts Earwig, expecting obedience and magical prowess.</p>
+        <p><strong>Lesson:</strong> Power can be harsh, but understanding others’ motives leads to cooperation.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/b3.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Thomas</h3>
+        <p>A kind-hearted but bumbling apprentice who assists Bella Yaga and sometimes struggles to keep up with Earwig’s wit.</p>
+        <p><strong>Lesson:</strong> Kindness and persistence are valuable even when you’re not the smartest.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <h2 class="section-title">My Neighbor Totoro Characters</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/c1.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Totoro</h3>
+        <p>A forest spirit who befriends Satsuki and Mei. Though he doesn’t speak, Totoro provides comfort, wonder, and protection.</p>
+        <p><strong>Lesson:</strong> Nature is magical and healing — we should respect and cherish it.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/c2.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Satsuki Kusakabe</h3>
+        <p>The older sister who cares deeply for Mei and supports her family during tough times.</p>
+        <p><strong>Lesson:</strong> Strength doesn’t always mean being fearless — it’s about showing love when things are hard.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/c3.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Mei Kusakabe</h3>
+        <p>The curious and brave younger sister who discovers Totoro’s forest world.</p>
+        <p><strong>Lesson:</strong> Wonder and imagination help us cope with uncertainty and change.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Princess Mononoke Characters</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/d1.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Ashitaka</h3>
+        <p>A kind and brave prince cursed by a demon. He seeks peace between humans and nature without choosing sides.</p>
+        <p><strong>Lesson:</strong> Empathy and understanding can bridge even the deepest divides.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/d2.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>San (Princess Mononoke)</h3>
+        <p>A fierce girl raised by wolves who defends the forest from humans. She struggles with her identity and hatred for mankind.</p>
+        <p><strong>Lesson:</strong> You can fight for what you love without losing who you are.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/d3.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Lady Eboshi</h3>
+        <p>The leader of Iron Town, strong-willed and industrial. Though she harms nature, she also cares deeply for her people.</p>
+        <p><strong>Lesson:</strong> People are complex — good and bad can exist in the same heart.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Ponyo Characters</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/e1.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Ponyo</h3>
+        <p>A goldfish princess who longs to become human. Her curiosity and love bring magic and joy to the world above the sea.</p>
+        <p><strong>Lesson:</strong> Innocence and love can change even the biggest obstacles.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/e2.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Sousuke</h3>
+        <p>A caring and brave boy who befriends Ponyo. His loyalty and kindness help bridge two very different worlds.</p>
+        <p><strong>Lesson:</strong> Friendship and trust can overcome fear and uncertainty.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/e3.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Fujimoto</h3>
+        <p>Ponyo’s father, a powerful but protective wizard of the sea. He struggles with letting Ponyo go but ultimately wants her happiness.</p>
+        <p><strong>Lesson:</strong> Letting go is sometimes the greatest act of love.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <h2 class="section-title">Howl's Moving Castle Characters</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/f1.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Howl</h3>
+        <p>A mysterious wizard with a moving castle. Despite his flamboyance and fear of conflict, he shows deep compassion and bravery.</p>
+        <p><strong>Lesson:</strong> True strength is found in protecting others, not avoiding battles.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/f2.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Sophie</h3>
+        <p>A humble hatmaker who is cursed into an old woman. Her journey reveals her inner strength, confidence, and capacity for love.</p>
+        <p><strong>Lesson:</strong> Beauty and worth come from within, not appearances.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/f3.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Calcifer</h3>
+        <p>A fire demon bound to Howl’s heart. While snarky and proud, he’s deeply loyal and helps power the moving castle.</p>
+        <p><strong>Lesson:</strong> Loyalty and heart can fuel even the most magical transformations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <h2 class="section-title">Castle in the Sky Characters</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/g1.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Sheeta</h3>
+        <p>A girl with a mysterious crystal who holds the secret to the legendary floating island, Laputa. She is brave, kind, and resourceful.</p>
+        <p><strong>Lesson:</strong> Kindness and courage can guide you through the darkest mysteries.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/g2.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Pazu</h3>
+        <p>An orphaned boy who dreams of discovering Laputa. His determination and loyalty to Sheeta help them uncover the truth together.</p>
+        <p><strong>Lesson:</strong> Never give up on your dreams, especially when they can change the world.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/g3.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Laputan Robot</h3>
+        <p>A silent guardian of Laputa, the robot shows both the destructive power and the gentle protectiveness of ancient technology.</p>
+        <p><strong>Lesson:</strong> True strength lies in choosing to protect, not destroy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <h2 class="section-title">Kiki’s Delivery Service Characters</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/h1.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Kiki</h3>
+        <p>A young witch-in-training who starts a delivery service in a new town. Her journey is about independence, self-discovery, and resilience.</p>
+        <p><strong>Lesson:</strong> Believing in yourself is the first step to finding your place in the world.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/h2.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Jiji</h3>
+        <p>Kiki's loyal black cat companion. Sarcastic, witty, and always by her side, Jiji brings humor and wisdom to Kiki’s journey.</p>
+        <p><strong>Lesson:</strong> Support and friendship can make even the scariest days manageable.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/h3.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Tombo</h3>
+        <p>A quirky and curious boy who admires Kiki's flying abilities. His genuine interest and encouragement help Kiki find confidence.</p>
+        <p><strong>Lesson:</strong> Sometimes, the people who believe in you most are the ones you least expect.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <h2 class="section-title">The Tale of the Princess Kaguya Characters</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/i1.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Princess Kaguya</h3>
+        <p>A celestial being born from a bamboo stalk. Her life is filled with beauty, sorrow, and a longing for freedom and truth.</p>
+        <p><strong>Lesson:</strong> True happiness comes from living authentically and embracing life’s joys and pains.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/i2.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Sutemaru</h3>
+        <p>Kaguya’s childhood friend who represents a simple and joyful life close to nature. Their bond is one of innocence and deep affection.</p>
+        <p><strong>Lesson:</strong> Sometimes the most meaningful connections are found in the simplest moments.</p>
+      </div>
+    </div>
+
+    <div class="character-card">
+      <div class="portrait" style="background-image: url('images/i3.jpeg'); height: 380px; width: 300px;"></div>
+      <div class="character-info">
+        <h3>Okina (Miyatsuko)</h3>
+        <p>The bamboo cutter who raises Kaguya as his daughter. Though loving, he is blinded by ambition, which leads to her sorrow.</p>
+        <p><strong>Lesson:</strong> Parental love must be guided by understanding, not control or pride.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+    <p>© 2005-2025 STUDIO GHIBLI Inc. · ご利用条件 · ご意見など</p>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.9.0/dist/index.bundle.min.js"></script>
+</body>
+</html>

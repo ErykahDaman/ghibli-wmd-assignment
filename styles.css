@@ -1,0 +1,185 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #D3CBBB;
+  color: #b6c0f1;
+  margin: 0;
+  padding: 0;
+  animation: fadeUp 1s ease-out forwards;
+}
+
+/* Navbar styles */
+nav {
+  background-color: #5A7285;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Film and character gallery layout */
+.film-gallery, .character-encyclopedia {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.film-card, .character-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.film-card:hover, .character-card:hover {
+  transform: scale(1.03);
+}
+
+.poster, .portrait {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.film-info, .character-info {
+  padding: 1rem;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #394063;
+}
+
+p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #5A7285;
+}
+
+/* See More toggle styling */
+details summary {
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #60B5C2;
+}
+
+details[open] summary::after {
+  content: " ▲";
+}
+
+details summary::after {
+  content: " ▼";
+}
+
+details p {
+  margin-top: 0.5rem;
+  color: #394063;
+}
+
+/* Animation for fade-up effect */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+  justify-content: center;
+}
+
+.feature-box {
+  width: 300px;
+  height: 600px;
+  background-color: #fdfdfd;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: scale(1.03);
+}
+
+.feature-image {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-bottom: 2px solid #ccc;
+}
+
+.feature-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40%;
+}
+
+.feature-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.spotify-button {
+  background-color: #1DB954;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.spotify-button:hover {
+  background-color: #169c42;
+}
+.watch-button {
+  margin-top: 10px;
+  background: #529dce;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.watch-button:hover {
+  background: #c21d2e;
+}

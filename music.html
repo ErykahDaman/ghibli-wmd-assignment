@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Studio Ghibli Soundtracks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.9.0/dist/index.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+    <style>
+         
+  body {
+     font-family: Arial, sans-serif;
+      margin: 0;
+      background-image: url('images/background3.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #fff; /* optional: for readability */
+    }
+    .feature-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+  justify-content: center;
+}
+
+.feature-box {
+  width: 300px;
+  height: 600px;
+  background-color: #f6c38f;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: scale(1.03);
+}
+
+.feature-image {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-bottom: 2px solid #ccc;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  justify-items: center;
+}
+
+.feature-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40%;
+}
+
+.feature-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.spotify-button {
+  background-color: #478ed0;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.spotify-button:hover {
+  background-color: #169c42;
+}
+  footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #34355e;
+      font-size: 0.9rem;
+      color: #272626;
+    }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #37426b;" aria-label="Main navigation">
+  <div class="container-fluid">
+    <img src="images/logo.png" alt="Logo" height="90px" width="90px" >
+    <a class="navbar-brand" href="index.html">Studio Ghibli</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Explore</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="movie.html">Movies</a></li>
+            <li><a class="dropdown-item" href="characters.html">Character Encyclopedia</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+   
+
+ <div class="feature-grid">
+<section class="feature-section">
+  <div class="feature-box">
+    <img src="images/!.jpeg" alt="Feature Cover" class="feature-image">
+    <div class="feature-content">
+      <h3>Best Studio Ghibli Soundtracks </h3>
+      <p>A general combo of all the amazing songs from all the ghibli movies ever made 💙</p>
+      <a href="https://open.spotify.com/playlist/6dQz1ZnwnluFiUhBOMrJQC?si=df73519990b246f5" target="_blank" class="spotify-button">🎧 Open on Spotify</a>
+    </div>
+  </div>
+</section>
+<section class="feature-section">
+  <div class="feature-box">
+    <img src="images/@.jpeg" alt="Feature Cover" class="feature-image">
+    <div class="feature-content">
+      <h3>Howls Moving Castle</h3>
+      <p>An album mostly composed by Joe Hisaishi a renowed composer and song writer.</p>
+      <a href="https://open.spotify.com/album/5fqlZFKYqvkIe2jdDGt2nl?si=xEbaa9YFSLWmTxNJahfxyA" target="_blank" class="spotify-button">🎧 Open on Spotify</a>
+    </div>
+  </div>
+</section>
+<section class="feature-section">
+  <div class="feature-box">
+    <img src="images/%.jpeg" alt="Feature Cover" class="feature-image">
+    <div class="feature-content">
+      <h3>Ghibli Vibes</h3>
+      <p>This playlist not only contains songs from ghibli but it has some that match the vibe. It'll make you feel like a Ghibli character with a little Jpop</p>
+      <a href="https://open.spotify.com/playlist/24VSJ0ti7TVKtBGO6Qli6x?si=9e61827b77054c75s" target="_blank" class="spotify-button">🎧 Open on Spotify</a>
+    </div>
+  </div>
+</section>
+<section class="feature-section">
+  <div class="feature-box">
+    <img src="images/$.jpeg" alt="Feature Cover" class="feature-image">
+    <div class="feature-content">
+      <h3>A Dream Of ghibli</h3>
+      <p>An album made by Mizune who was greatly inspired by Ghibli who deserves to be mentions for her great artistry</p>
+      <a href="https://open.spotify.com/album/0G1D08BTGMiGkCvzougVv1?si=z_0QEz3CSpOZPIuHr1-SHQ" target="_blank" class="spotify-button">🎧 Open on Spotify</a>
+    </div>
+  </div>
+</section>
+<section class="feature-section">
+  <div class="feature-box">
+    <img src="images/==.jpeg" alt="Feature Cover" class="feature-image">
+    <div class="feature-content">
+      <h3>This is Studio Ghibli</h3>
+      <p>A playlist made by spotify of one of the most famous well known songs in studio Ghibli</p>
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DX7GTqMQDhOum?si=1430fbb9d11b4b8d" target="_blank" class="spotify-button">🎧 Open on Spotify</a>
+    </div>
+  </div>
+</section>
+<section class="feature-section">
+  <div class="feature-box">
+    <img src="images/^.jpeg" alt="Feature Cover" class="feature-image">
+    <div class="feature-content">
+      <h3>Ghibli For sleep</h3>
+      <p>Songs that help you relax to the point of falling asleep, this one is for our insomniacs out there</p>
+      <a href="https://open.spotify.com/playlist/7orPGBgeXQQn2508RZgdNo?si=626989fc80b140f9" target="_blank" class="spotify-button">🎧 Open on Spotify</a>
+    </div>
+  </div>
+</section>
+<section class="feature-section">
+  <div class="feature-box">
+    <img src="images/&.jpeg" alt="Feature Cover" class="feature-image">
+    <div class="feature-content">
+      <h3>Ghibli Lofi</h3>
+      <p>These are our soundtracks turned into lofi beats just for a chill kinda vibe.</p>
+      <a href="https://open.spotify.com/playlist/7jiQemqr9EFtd2zlzMEQ7h?si=705af478702a4553" target="_blank" class="spotify-button">🎧 Open on Spotify</a>
+    </div>
+  </div>
+</section>
+<section class="feature-section">
+  <div class="feature-box">
+    <img src="images/++.jpeg" alt="Feature Cover" class="feature-image">
+    <div class="feature-content">
+      <h3>Studio Ghibli Morning Vibes</h3>
+      <p>This one is for our early risers to enjoy when they wake up and getready for their day.</p>
+      <a href="https://open.spotify.com/playlist/3yFs46OUwbshunOxC4QO1G?si=7062788a32ab4077" target="_blank" class="spotify-button">🎧 Open on Spotify</a>
+    </div>
+  </div>
+</section>
+<section class="feature-section">
+  <div class="feature-box">
+    <img src="images/-.jpeg" alt="Feature Cover" class="feature-image">
+    <div class="feature-content">
+      <h3>Studio Ghibli Soundtrack Re-Imagined</h3>
+      <p>A playlist where hundreds of artists made their own version of studio ghibli songs which inspired them to do so.</p>
+      <a href="https://open.spotify.com/album/7mKQf50ybO3Ml6Ir8Uk3dA?si=EkpHWTg_SrCIGAES-RIsYQ" target="_blank" class="spotify-button">🎧 Open on Spotify</a>
+    </div>
+  </div>
+</section>
+<section class="feature-section">
+  <div class="feature-box">
+    <img src="images/=.jpeg" alt="Feature Cover" class="feature-image">
+    <div class="feature-content">
+      <h3>Studio Ghibli Studying Music</h3>
+      <p>This playlist gets you into the feel of studying.Ghibli <style class=""></style></p>
+      <a href="https://open.spotify.com/" target="_blank" class="spotify-button">🎧 Open on Spotify</a>
+    </div>
+  </div>
+</section>
+<section class="feature-section">
+  <div class="feature-box">
+    <img src="images/+.jpeg" alt="Feature Cover" class="feature-image">
+    <div class="feature-content">
+      <h3>Romanticizing life Ghibli <Style></Style></h3>
+      <p>This playlist as the name states gets you into Romanticizing life using the ghibli style music. magical</p>
+      <a href="https://open.spotify.com/playlist/5ySQ9bZ1fuv31mmWzG4z7x?si=ef82161401ae4fdc" target="_blank" class="spotify-button">🎧 Open on Spotify</a>
+    </div>
+  </div>
+</section>
+ </div>
+<!-- 👣 Footer -->
+  <footer>
+    <p>© 2005-2025 STUDIO GHIBLI Inc. · ご利用条件 · ご意見など</p>
+  </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
